@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BAWNA Logistics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div id="header">
+
+        <h1 id="title">BAWNA Logistics</h1>
+
+        <div id="navbar">
+            <a href="/">HOME</a>
+            <a href="/about">ABOUT</a>
+            <a href="/order">PLACE ORDER</a>
+        </div>
+
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+
+</html>
