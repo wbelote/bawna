@@ -4,21 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>BAWNA Logistics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
-    <div>
-        <h1>BAWNA Logistics</h1>
+    <div id="header">
+
+        <h1 id="title">BAWNA Logistics</h1>
+
+        <div id="navbar">
+            <a href="/">HOME</a>
+            <a href="/about">ABOUT</a>
+            <a href="/order">PLACE ORDER</a>
+        </div>
+
     </div>
 
-    <div id="navbar">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/order">Place Order</a>
+    <div id="content">
+        {% block content %}{% endblock %}
     </div>
-
-    {% block content %}{% endblock %}
 
 </body>
 
