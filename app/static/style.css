@@ -1,10 +1,16 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #CACACA;
 }
 
 #header {
     background-color: #363636;
+    box-shadow: 0px 0px 20px 4px #909090;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,6 +30,30 @@
 }
 
 #content {
-    width: 80%;
-    margin: 30px auto;
+    width: 720px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #909090;
+    background-color: #EEEEEE;
+}
+
+.form-area {
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: solid 1px #484848;
+}
+
+#submit {
+    width: min-content;
+    background-color: rgb(160, 26, 26);
+    border: none;
+    padding: 15px;
+    box-sizing: content-box;
+    color: white;
 }

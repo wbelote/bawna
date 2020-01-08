@@ -2,6 +2,39 @@
 
 {% block content %}
 
-Place an order here
+<form action="/order" method="POST">
+
+    <h2 class="form-area">Place an order</h2>
+
+    <div class="form-area">
+        <p>Name</p>
+        <input type="text" name="name">
+    </div>
+    <div class="form-area">
+        <p>Phone Number</p>
+        <input type="text" name="phone">
+    </div>
+    <div class="form-area">
+        <p>Address</p>
+        <input type="text" name="address">
+    </div>
+
+    <div class="form-area">
+        <p>Item</p>
+        <input list="items">
+        <datalist id="items">
+            <option value="Sofa"></option>
+            <option value="Chair"></option>
+            <option value="Table"></option>
+            <option value="Dresser"></option>
+            <!-- TODO: add more options -->
+        </datalist>
+    </div>
+
+    <div class="form-area">
+        <input type="submit" value="SUBMIT" id="submit">
+    </div>
+
+</form>
 
 {% endblock %}
